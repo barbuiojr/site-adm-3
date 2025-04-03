@@ -30,12 +30,19 @@
 
         //Deletar categoria
         public function deletarCategoria($id){
-            $query = "DELETE  FROM $this->tabela WHERE id = :id";
-
-            $stmt = $this->conn->prepare($query);
-            $stmt->bindParam(":id", $id);
-            $stmt->execute();
-            return $stmt->rowCount() > 0;
+            try{
+                $query = "DELETE  FROM $this->tabela WHERE id = :id";
+    
+                $stmt = $this->conn->prepare($query);
+                $stmt->bindParam(":id", $id);
+                $stmt->execute();
+                return $stmt->rowCount() > 0;
+            }
+            catch (Exception $e){
+                echo "Não é possível apagar uma categoria em que há produtos cadastrados!";
+                echo $e->getMessage();
+                sleep(3);
+            }
         }
 
         //Buscar categoria

@@ -8,6 +8,8 @@
         if($sucesso){
             return header("Location: categorias.php");
         }else {
+            echo "Não é possível deletar uma categoria com produtos vinculados!";
+            sleep(2);
             return header("Location: categorias.php");
         }
     }

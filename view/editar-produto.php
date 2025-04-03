@@ -27,6 +27,7 @@
             <div class="formulario">
 
                 <input type="hidden" name="id" value="<?php echo $produtoAtual['id']?>">
+                <input type="hidden" name="img" value="<?php echo $produtoAtual['img'] ?>">
                 <div>
                     <label for="nome">Nome do produto</label><br>
                     <input type="text" name="nome" value="<?php echo $produtoAtual['nome']?>">
@@ -44,10 +45,6 @@
                     </select>
                 </div>
                 <div>
-                    <label for="image">Foto</label><br>
-                    <input type="file" name="image">
-                </div>
-                <div>
                     <label for="preco">Preço R$</label><br>
                     <input type="number" name="preco" step="0.01" value="<?php echo $produtoAtual['preco']?>">
                 </div>
@@ -62,5 +59,6 @@
     </main>
 
 <?php require_once __DIR__ . '\components\footer.php'; ?>
+<?php require_once __DIR__ . '\components\alerta-ok.php';?>
 </body>
 </html>
