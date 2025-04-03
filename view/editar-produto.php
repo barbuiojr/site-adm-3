@@ -39,13 +39,13 @@
                     <label for="categoria">Categoria</label><br>
                     <select name="categoria" id="categoria">
                         <?php foreach($listaCategorias as $cat){?>
-                        <option value="<?php echo $cat['idcategoria'];?>"><?php echo $cat['nome'];?></option>
+                        <option value="<?php echo $cat['id'];?>"><?php echo $cat['nome'];?></option>
                         <?php } ?>
                     </select>
                 </div>
                 <div>
-                    <label for="img">Foto</label><br>
-                    <input type="text" name="img" value="<?php echo $produtoAtual['img']?>">
+                    <label for="image">Foto</label><br>
+                    <input type="file" name="image">
                 </div>
                 <div>
                     <label for="preco">Preço R$</label><br>

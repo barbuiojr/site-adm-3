@@ -1,8 +1,8 @@
-insert into categorias (idcategoria, nome) values 
-    (1,'Eletrônicos'), (2,'Eletrodomésticos'), (3,'Roupas e Acessórios'), (4,'Beleza e Cuidados Pessoais'), (5,'Alimentos e Bebidas'),
-    (6,'Casa e Decoração'), (7,'Esportes e Lazer'), (8,'Automotivo'), (9,'Brinquedos e Jogos'), (10,'Papelaria e Escritório'), (11,'Livros e Mídia'),
-    (12,'Música e Instrumentos Musicais'), (13,'Pet Shop'), (14,'Ferramentas e Construção'), (15,'Relógios e Óculos'),
-    (16,'Energia Solar e Sustentabilidade'), (17,'Segurança e Monitoramento'), (18,'Viagem e Turismo'),(19,'Serviços Digitais');
+insert into categorias (nome) values 
+    ('Eletrônicos'), ('Eletrodomésticos'), ('Roupas e Acessórios'), ('Beleza e Cuidados Pessoais'), ('Alimentos e Bebidas'),
+    ('Casa e Decoração'), ('Esportes e Lazer'), ('Automotivo'), ('Brinquedos e Jogos'), ('Papelaria e Escritório'), ('Livros e Mídia'),
+    ('Música e Instrumentos Musicais'), ('Pet Shop'), ('Ferramentas e Construção'), ('Relógios e Óculos'),
+    ('Energia Solar e Sustentabilidade'), ('Segurança e Monitoramento'), ('Viagem e Turismo'),('Serviços Digitais');
     
 insert into produtos (nome, descricao, categoria, img, preco) values
     ('iPhone 15','Smartphone com tela OLED de 6,1 polegadas e chip A17.', 1, 'assets/images/iphone15.webp', 5999.00),

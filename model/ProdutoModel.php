@@ -13,7 +13,7 @@
 
         //Listar produtos
         public function listar(){
-            $query= "SELECT produtos.id, produtos.nome AS pnome, produtos.descricao, categorias.nome, produtos.img, produtos.preco FROM $this->tabela INNER JOIN categorias ON produtos.categoria = categorias.idcategoria";
+            $query= "SELECT produtos.id, produtos.nome AS pnome, produtos.descricao, categorias.nome, produtos.img, produtos.preco FROM $this->tabela INNER JOIN categorias ON produtos.categoria = categorias.id";
             $stmt = $this->conn->prepare($query);
             $stmt->execute();
             return $stmt->fetchAll();

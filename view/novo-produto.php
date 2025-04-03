@@ -11,9 +11,6 @@
     if($_SERVER['REQUEST_METHOD'] === "POST"){
         if(isset($_FILES)){
             $file = $_FILES;
-            echo "<pre>";
-            print_r($file);
-            echo "</pre>";
             $img = "assets/images/".$_FILES["image"]["name"];
             move_uploaded_file($_FILES["image"]["tmp_name"], "assets/images/".$_FILES["image"]["name"]);
         }else{
@@ -59,7 +56,7 @@
                     <label for="categoria">Categoria</label><br>
                     <select name="categoria" id="categoria">
                         <?php foreach($listaCategorias as $cat){?>
-                        <option value="<?php echo $cat['idcategoria'];?>"><?php echo $cat['nome'];?></option>
+                        <option value="<?php echo $cat['id'];?>"><?php echo $cat['nome'];?></option>
                         <?php } ?>
                     </select>
                 </div>

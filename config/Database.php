@@ -3,7 +3,7 @@
 
         private $host = "localhost";
         private $port ="3306";
-        private $dbName= "e_commerce";
+        private $dbName= "commerce";
         private $user = "root";
         private $password = "";
 

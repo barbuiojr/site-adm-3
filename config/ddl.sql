@@ -1,10 +1,9 @@
-create database e_commerce;
+create database commerce;
 
-use e_commerce;
+use commerce;
 
 create table categorias (
 	id int primary key not null unique auto_increment,
-	idcategoria int not null unique,
     nome varchar(50)
 );
 create table produtos (
@@ -14,7 +13,7 @@ create table produtos (
     categoria int not null,
     img varchar(200),
     preco float,
-    foreign key (categoria) references categorias(idcategoria)
+    foreign key (categoria) references categorias(id)
 );
 
 create table usuarios (

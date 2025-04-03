@@ -38,7 +38,7 @@
                     ?>
 
                     <tr>
-                        <td><?php echo $categoria['idcategoria'] ?></td>
+                        <td><?php echo $categoria['id'] ?></td>
                         <td><?php echo $categoria['nome'] ?></td>
                         <td>
                         <div class="edit-delete">
