@@ -1,0 +1,37 @@
+aside {
+    width: 200px;
+    height: 100vh;
+    background-color: #c6d757;
+    grid-column: 1;
+    grid-row: 1 / 4;
+
+    button {
+        visibility: hidden;
+    }
+    li {
+        padding: 10px;
+    }
+}
+a {
+    text-decoration: none;
+    padding: 8px;
+    opacity: 0.4;
+    transition: 0.3s;
+    color: #000;
+}
+a:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 490px) {
+    aside {
+        visibility: hidden;
+
+        button {
+            visibility: visible;
+            /* position: fixed;
+            left: 10px;
+            top: 13px; */
+        }
+    }
+}

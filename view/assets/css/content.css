@@ -1,0 +1,18 @@
+main {
+    font-family: "Poppins", sans-serif;
+    width: calc(100vw - 200px);
+    height: calc(100vh - 68px - 22px);
+    background-color: #d3da9f;
+    overflow: auto;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+@media screen and (max-width: 490px) {
+    main {
+        width: 100vw;
+        height: calc(100vh - 68px - 22px);
+        /* top: 48px; */
+        grid-column: 1;
+    }
+}
