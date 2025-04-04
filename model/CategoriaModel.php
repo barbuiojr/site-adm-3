@@ -39,7 +39,6 @@
                 return $stmt->rowCount() > 0;
             }
             catch (Exception $e){
-                echo "Não é possível apagar uma categoria em que há produtos cadastrados!";
                 echo $e->getMessage();
                 sleep(3);
             }
