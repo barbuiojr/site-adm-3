@@ -62,10 +62,6 @@
                     <label for="genero">Gênero</label><br>
                     <input type="text" value="" name="genero">
                 </div>
-                <div>
-                    <label for="foto_perfil">Foto do perfil</label><br>
-                    <input type="text" value="" name="foto_perfil">
-                </div>
                 <div class="buttons">
                     <a href="usuarios.php">
                         <button type="button">Cancelar</button>

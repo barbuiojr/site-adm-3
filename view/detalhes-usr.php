@@ -50,10 +50,6 @@
                     <label for="genero">Gênero</label><br>
                     <input type="text" name="genero" value="<?php  echo $usrAtual['genero']; ?>">
                 </div>
-                <div>
-                    <label for="foto_perfil">Foto do perfil</label><br>
-                    <input type="text" name="foto_perfil" value="<?php  echo $usrAtual['foto_perfil']; ?>">
-                </div>
                 <div class="buttons">
                     <a href="usuarios.php">
                         <button type="button">Cancelar</button>
